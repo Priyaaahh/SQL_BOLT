@@ -1,0 +1,14 @@
+Ques.1: Find the title of each film.
+Query : select title from movies;
+
+Ques.2: Find the director of each film.
+Query : select director from movies;
+
+Ques.3: Find the title and director of each film.
+Query : select title, director from movies;
+
+Ques.4: Find the title and year of each film.
+Query : select title, year from movies;
+ 
+Ques.5: Find all the information about each film.
+Query : select * from movies; 

@@ -1,0 +1,15 @@
+1. Find all the Toy Story movies
+QUERY 1:SELECT * FROM movies
+WHERE title LIKE 'Toy Story%';
+
+2. Find all the movies directed by John Lasseter
+QUERY 2:SELECT * FROM movies
+WHERE director = 'John Lasseter';
+
+3. Find all the movies (and director) not directed by John Lasseter
+QUERY 3:SELECT title, director FROM movies
+WHERE director != 'John Lasseter';
+
+4. Find all the WALL-* movies
+QUERY 4:SELECT * FROM movies
+WHERE title LIKE 'WALL-%';
