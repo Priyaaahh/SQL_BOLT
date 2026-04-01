@@ -1,0 +1,13 @@
+Ques.1: Find the number of movies each director has directed.
+Query : SELECT director, COUNT(*) AS num_movies
+        FROM movies
+        GROUP BY director;
+
+Ques.2: Find the total domestic and international sales that can be attributed to each director.
+Query : SELECT director,
+       SUM(domestic_sales) AS total_domestic_sales,
+       SUM(international_sales) AS total_international_sales
+       FROM movies
+       JOIN boxoffice
+      ON movies.id = boxoffice.movie_id
+      GROUP BY director;
